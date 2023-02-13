@@ -1,0 +1,28 @@
+@import url("../index.css");
+.container {
+  width: 100%;
+  height: 100%;
+}
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 8rem);
+  padding: var(--gap);
+  font-weight: normal;
+  color: var(--secondary-text-color);
+  align-items: center;
+  background-color: var(--secondary-color);
+  justify-items: center;
+}
+
+.navbar > div:hover {
+  font-weight: bold;
+}
+
+.home{
+    color: var(--secondary-text-color);
+    font-weight: 600;
+}
+
+.active{
+    font-weight: bold;
+}

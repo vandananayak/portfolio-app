@@ -1,0 +1,7 @@
+.intro {
+  display: block;
+  padding-top: var(--gap);
+}
+.name {
+  color: rgb(130, 12, 88);
+}
