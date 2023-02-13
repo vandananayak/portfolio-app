@@ -15,6 +15,7 @@
 
 a{
     color: var(--secondary-text-color);
+    text-decoration-line: none;
 }
 
 .navbar > div:hover {
