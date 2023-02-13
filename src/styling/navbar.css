@@ -8,10 +8,13 @@
   grid-template-columns: repeat(auto-fill, 8rem);
   padding: var(--gap);
   font-weight: normal;
-  color: var(--secondary-text-color);
   align-items: center;
   background-color: var(--secondary-color);
   justify-items: center;
+}
+
+a{
+    color: var(--secondary-text-color);
 }
 
 .navbar > div:hover {
@@ -25,4 +28,5 @@
 
 .active{
     font-weight: bold;
+    text-decoration-line: none;
 }

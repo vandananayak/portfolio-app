@@ -1,28 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styling/navbar.css";
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import Introduction from "./introduction";
 const Navbar = () => {
-  const navList = ["Skills", "Projects", "Experience", "Contact"];
-  const renderNavList = [];
-  const [active, setActive] = useState("");
-  navList.forEach((nav) => {
-    renderNavList.push(
-      <div
-        onClick={() => {
-          setActive(nav);
-        }}
-        className={active == nav ? "active" : ""}
-      >
-        {nav}
-      </div>
-    );
-  });
   return (
-    <div className="container">
-      <div className="navbar">
-        <span className="home">Portfolio</span>
-        {renderNavList}
-      </div>
-    </div>
+    <>
+      <BrowserRouter>
+        <div className="container">
+          <div className="navbar">
+            <NavLink
+              to="/"
+              className={({ isActive }) => {
+                return isActive ? "active" : "";
+              }}
+            >
+              Logo
+            </NavLink>
+          </div>
+        </div>
+        <Routes>
+          <Route exact path="/" element={<Introduction />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 };
 
