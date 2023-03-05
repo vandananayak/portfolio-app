@@ -1,7 +1,7 @@
 :root {
   --primary-color: white;
-  --secondary-color: #ffa0b2;
-  --third-color:rgb(255 80 109 / 18%);
+  --secondary-color: #f2b7c2;
+  --third-color:rgb(255, 255, 255);
   --gap: 1rem;
   --primary-text-color: rgb(130, 12, 88);
   --secondary-text-color: white;
@@ -21,6 +21,10 @@ html {
   background-color: var(--third-color);
 }
 
+h1{
+  color: #d24a7e;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -29,7 +33,7 @@ code {
 .card {
   height: fit-content;
   width: 50vw;
-  background-color: var(--third-color);
+  background-color: var(--secondary-color);
   border-radius: 1rem;
   padding: 2rem;
   color: var(--primary-text-color);
@@ -40,11 +44,11 @@ code {
   color: var(--primary-text-color);
 }
 
-/* .card:hover {
+.card:hover {
   box-shadow: 10px 11px 20px -3px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 3px 5px 8px -3px rgb(0, 0, 0, 0.75);
-  -moz-box-shadow: 3px 5px 8px -3px rgba(0, 0, 0, 0.75);
-} */
+  -webkit-box-shadow: 7px 12px 14px 0px rgb(0 0 0 / 70%);
+  -moz-box-shadow: 7px 12px 14px 0px rgb(0 0 0 / 70%);
+}
 
 .scrolling {
   display: grid;

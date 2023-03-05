@@ -1,6 +1,5 @@
-import React from 'react';
+import React from "react";
 import ScrollingCard from "./ScrollingCard";
-
 
 const Contact = () => {
   const Contact = () => {
@@ -8,11 +7,20 @@ const Contact = () => {
       <>
         <div>
           <h1>Contact</h1>
-          <ul>
-            <li>LinkedIn: <a classname="contact" href='https://www.linkedin.com/in/vandana-nayak-094/'> Vandana Nayak</a></li>
-            <li>Phone: +91 9353611968</li>
-            
-          </ul>
+          <h3>
+            <ul>
+              <li>
+                LinkedIn:
+                <a
+                  classname="contact"
+                  href="https://www.linkedin.com/in/vandana-nayak-094/"
+                >
+                  Vandana Nayak
+                </a>
+              </li>
+              <li>Phone: +91 9353611968</li>
+            </ul>
+          </h3>
         </div>
       </>
     );
@@ -22,6 +30,6 @@ const Contact = () => {
       <ScrollingCard data={Contact()}></ScrollingCard>
     </div>
   );
-}
+};
 
-export default Contact
+export default Contact;

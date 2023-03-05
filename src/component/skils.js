@@ -1,6 +1,5 @@
-import React from 'react'
+import React from "react";
 import ScrollingCard from "./ScrollingCard";
-
 
 const Skills = () => {
   const skills = () => {
@@ -8,12 +7,14 @@ const Skills = () => {
       <>
         <div>
           <h1>Skills</h1>
-          <ul>
-            <li>HTML</li>
-            <li>CSS, Media Query</li>
-            <li>Typescript</li>
-            <li>Angular</li>
-          </ul>
+          <h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS, Media Query</li>
+              <li>Typescript</li>
+              <li>Angular</li>
+            </ul>
+          </h3>
         </div>
       </>
     );
@@ -23,6 +24,6 @@ const Skills = () => {
       <ScrollingCard data={skills()}></ScrollingCard>
     </div>
   );
-}
+};
 
-export default Skills
+export default Skills;
