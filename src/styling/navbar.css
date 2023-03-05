@@ -5,6 +5,7 @@
 }
 .navbar {
   display: grid;
+  height: 100%;
   grid-template-columns: repeat(auto-fill, 8rem);
   padding: var(--gap);
   font-weight: normal;
@@ -12,22 +13,56 @@
   background-color: var(--secondary-color);
   justify-items: center;
 }
-
-a{
-    color: var(--secondary-text-color);
-    text-decoration-line: none;
+@media screen and (max-width: 600px), screen and (max-height: 600px){
+    .navbar{
+      position: absolute;
+      width: fit-content;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 1rem;
+    }
+}
+a {
+  color: var(--secondary-text-color);
+  text-decoration-line: none;
 }
 
 .navbar > div:hover {
   font-weight: bold;
 }
 
-.home{
-    color: var(--secondary-text-color);
-    font-weight: 600;
+.home {
+  color: var(--secondary-text-color);
+  font-weight: 600;
 }
 
-.active{
-    font-weight: bold;
-    text-decoration-line: none;
+.active {
+  font-weight: bold;
+  text-decoration-line: none;
+}
+
+.component {
+  display: grid;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-items: center;
+  overflow: auto;
+  margin-top: 1rem;
+}
+
+.component::-webkit-scrollbar {
+  width: 6px;
+  background-color: var(--secondary-color);
+}
+.component::-webkit-scrollbar-thumb {
+  background-color: rgb(178, 43, 90);
+  border-radius: 1rem;
+}
+.component::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgb(41, 34, 34);
+  background-color: #ffffff;
+  border-radius: 1rem;
 }

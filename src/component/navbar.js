@@ -12,35 +12,39 @@ const Navbar = () => {
       <BrowserRouter>
         <div className="container">
           <div className="navbar">
-          <NavLink
+            <NavLink
               to="/"
               className={({ isActive }) => {
                 return isActive ? "active" : "";
               }}
             >
               Home
-            </NavLink><NavLink
+            </NavLink>
+            <NavLink
               to="/education"
               className={({ isActive }) => {
                 return isActive ? "active" : "";
               }}
             >
               Education
-            </NavLink><NavLink
+            </NavLink>
+            <NavLink
               to="/experience"
               className={({ isActive }) => {
                 return isActive ? "active" : "";
               }}
             >
               Experience
-            </NavLink><NavLink
+            </NavLink>
+            <NavLink
               to="/skills"
               className={({ isActive }) => {
                 return isActive ? "active" : "";
               }}
             >
               Skills
-            </NavLink><NavLink
+            </NavLink>
+            <NavLink
               to="/contact"
               className={({ isActive }) => {
                 return isActive ? "active" : "";
@@ -50,13 +54,15 @@ const Navbar = () => {
             </NavLink>
           </div>
         </div>
-        <Routes>
-          <Route exact path="/" element={<Introduction />} />
-          <Route exact path="/education" element={<Education />} />
-          <Route exact path="/experience" element={<Experience />} />
-          <Route exact path="/skills" element={<Skills />} />
-          <Route exact path="/contact" element={<Contact />} />
-        </Routes>
+        <div className="component">
+          <Routes>
+            <Route exact path="/" element={<Introduction />} />
+            <Route exact path="/education" element={<Education />} />
+            <Route exact path="/experience" element={<Experience />} />
+            <Route exact path="/skills" element={<Skills />} />
+            <Route exact path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </>
   );

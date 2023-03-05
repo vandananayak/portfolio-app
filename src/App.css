@@ -1,7 +1,14 @@
 .main {
   display: grid;
-  grid-template-rows: 5% auto;
+  grid-template-rows: 7% auto;
   height: 100vh;
-  align-items: center;
-  justify-items: center;
+}
+
+
+@media screen and (max-width: 600px), screen and (max-height: 600px){
+  .main{
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: none;
+  }
 }
