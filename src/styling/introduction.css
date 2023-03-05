@@ -6,7 +6,7 @@
   color: rgb(130, 12, 88);
 }
 button.MuiButtonBase-root.MuiButton-root.MuiButton-contained {
-  background-color: crimson;
+  background-color: #ff5f7d;
 }
 .downloadButton{
   padding-top: var(--gap);

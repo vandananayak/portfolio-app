@@ -1,11 +1,9 @@
 import React from "react";
 import "../styling/navbar.css";
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-import Introduction from "./introduction";
-import Education from "./education";
-import Experience from "./expirence";
-import Skills from "./skils";
-import Contact from "./contact";
+import { BrowserRouter, NavLink } from "react-router-dom";
+import RoutingLink from './routingLink';
+
+
 const Navbar = () => {
   return (
     <>
@@ -54,15 +52,7 @@ const Navbar = () => {
             </NavLink>
           </div>
         </div>
-        <div className="component">
-          <Routes>
-            <Route exact path="/" element={<Introduction />} />
-            <Route exact path="/education" element={<Education />} />
-            <Route exact path="/experience" element={<Experience />} />
-            <Route exact path="/skills" element={<Skills />} />
-            <Route exact path="/contact" element={<Contact />} />
-          </Routes>
-        </div>
+        <RoutingLink></RoutingLink>
       </BrowserRouter>
     </>
   );

@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 function Introduction() {
   return (
     <>
-      <div>
+      <h1>
         Hello...
         <span className="intro">
           I am <span className="name">Vandana Nayak</span>
@@ -15,7 +15,7 @@ function Introduction() {
             Download CV
           </Button>
         </div>
-      </div>
+      </h1>
     </>
   );
 }

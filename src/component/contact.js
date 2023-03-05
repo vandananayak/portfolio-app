@@ -9,7 +9,7 @@ const Contact = () => {
         <div>
           <h1>Contact</h1>
           <ul>
-            <li>LinkedIn: <a href='https://www.linkedin.com/in/vandana-nayak-094/'> Vandana Nayak</a></li>
+            <li>LinkedIn: <a classname="contact" href='https://www.linkedin.com/in/vandana-nayak-094/'> Vandana Nayak</a></li>
             <li>Phone: +91 9353611968</li>
             
           </ul>

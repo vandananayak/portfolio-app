@@ -26,7 +26,7 @@
     }
 }
 a {
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
   text-decoration-line: none;
 }
 
@@ -50,7 +50,7 @@ a {
   align-items: center;
   justify-items: center;
   overflow: auto;
-  margin-top: 1rem;
+  margin: 2rem;
 }
 
 .component::-webkit-scrollbar {
