@@ -13,6 +13,8 @@ const Skills = () => {
               <li>CSS, Media Query</li>
               <li>Typescript</li>
               <li>Angular</li>
+              <li>React</li>
+              <li>Git</li>
             </ul>
           </h3>
         </div>

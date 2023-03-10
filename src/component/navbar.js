@@ -1,8 +1,7 @@
 import React from "react";
 import "../styling/navbar.css";
 import { BrowserRouter, NavLink } from "react-router-dom";
-import RoutingLink from './routingLink';
-
+import RoutingLink from "./routingLink";
 
 const Navbar = () => {
   return (
@@ -41,6 +40,14 @@ const Navbar = () => {
               }}
             >
               Skills
+            </NavLink>
+            <NavLink
+              to="/project"
+              className={({ isActive }) => {
+                return isActive ? "active" : "";
+              }}
+            >
+              Project
             </NavLink>
             <NavLink
               to="/contact"

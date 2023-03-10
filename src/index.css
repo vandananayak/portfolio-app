@@ -1,7 +1,7 @@
 :root {
   --primary-color: white;
   --secondary-color: #f2b7c2;
-  --third-color:rgb(255, 255, 255);
+  --third-color: rgb(255, 255, 255);
   --gap: 1rem;
   --primary-text-color: rgb(130, 12, 88);
   --secondary-text-color: white;
@@ -21,7 +21,7 @@ html {
   background-color: var(--third-color);
 }
 
-h1{
+h1 {
   color: #d24a7e;
 }
 
@@ -39,11 +39,13 @@ code {
   color: var(--primary-text-color);
   overflow: hidden;
   box-shadow: 5px 7px 14px 0 rgba(0, 0, 0, 0.399);
-  -webkit-box-shadow:5px 7px 14px 0 rgba(0, 0, 0, 0.309);
-  -moz-box-shadow:5px 7px 14px 0 rgba(0, 0, 0, 0.334);
+  -webkit-box-shadow: 5px 7px 14px 0 rgba(0, 0, 0, 0.309);
+  -moz-box-shadow: 5px 7px 14px 0 rgba(0, 0, 0, 0.348);
+  position: relative;
+  z-index: 1;
 }
 
-.contact>a{
+.contact > a {
   color: var(--primary-text-color);
 }
 
@@ -70,4 +72,27 @@ code {
   -webkit-box-shadow: inset 0 0 6px rgb(41, 34, 34);
   background-color: #f5f5f5;
   border-radius: 1rem;
+}
+
+@media screen and (min-height: 600px) and (min-width:600px) {
+  .custom-shape-divider-bottom-1678455331 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-bottom-1678455331 svg {
+    position: sticky;
+    display: block;
+    width: calc(122% + 1.3px);
+    height: 12vh;
+  }
+
+  .custom-shape-divider-bottom-1678455331 .shape-fill {
+    fill: #dd2d6b6b;
+  }
 }

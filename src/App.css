@@ -5,7 +5,7 @@
 }
 
 
-@media screen and (max-width: 600px), screen and (max-height: 600px){
+@media screen and (max-width: 600px){
   .main{
     display: grid;
     grid-template-columns: 20% auto;
