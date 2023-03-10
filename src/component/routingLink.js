@@ -9,7 +9,7 @@ import { Routes, Route } from "react-router-dom";
 export const RoutingLink = () => {
   return (
     <div className="component">
-      <Routes>
+      <Routes basename="/portfolio-app">
         <Route exact path="/" element={<Introduction />} />
         <Route exact path="/education" element={<Education />} />
         <Route exact path="/experience" element={<Experience />} />

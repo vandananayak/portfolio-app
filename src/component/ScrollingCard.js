@@ -2,7 +2,7 @@ import React from "react";
 
 const ScrollingCard = (props) => {
   return (
-    <div>
+    <div >
       <div className="card">
         <div className="scrolling">{props.data}</div>
       </div>

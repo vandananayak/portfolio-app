@@ -10,15 +10,29 @@ const Contact = () => {
           <h3>
             <ul>
               <li>
-                LinkedIn:
-                <a
-                  classname="contact"
-                  href="https://www.linkedin.com/in/vandana-nayak-094/"
-                >
-                  Vandana Nayak
-                </a>
+                <u>
+                  <a
+                    classname="contact"
+                    href="https://www.linkedin.com/in/vandana-nayak-094/"
+                    target={"_blank"}
+                    rel={"noreferrer"}
+                  >
+                    LinkedIn
+                  </a>
+                </u>
               </li>
-              <li>Phone: +91 9353611968</li>
+
+              <li>
+                <u>
+                  <a
+                    href="https://github.com/vandananayak"
+                    target={"_blank"}
+                    rel={"noreferrer"}
+                  >
+                    Github
+                  </a>
+                </u>
+              </li>
             </ul>
           </h3>
         </div>

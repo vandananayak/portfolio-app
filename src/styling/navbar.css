@@ -13,7 +13,7 @@
   background-color: var(--secondary-color);
   justify-items: center;
 }
-@media screen and (max-width: 600px), screen and (max-height: 600px){
+@media screen and (max-width: 600px){
     .navbar{
       position: absolute;
       width: fit-content;
@@ -46,11 +46,11 @@ a {
 
 .component {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 2vh;
   align-items: center;
   justify-items: center;
   overflow: auto;
-  margin: 2rem;
+  margin: 3rem 1rem 1rem;
 }
 
 .component::-webkit-scrollbar {

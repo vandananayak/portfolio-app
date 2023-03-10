@@ -7,7 +7,7 @@ import RoutingLink from './routingLink';
 const Navbar = () => {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolio-app">
         <div className="container">
           <div className="navbar">
             <NavLink
